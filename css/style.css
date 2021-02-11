@@ -4,7 +4,9 @@ body {
     
     margin-top:0%;
     border:0;
-    
+    border: 1px solid black;
+    display: inline-block;
+   
 
 }
 
@@ -20,19 +22,20 @@ body {
     margin-left: 10%;
     margin-right:10%;
     margin-top:0%;
+    border: 1px solid black;
 }
 
 .logo{
 
     border:0;
-    margin-top: 0.5rem;
+    margin-top: 0rem;
 }
 
 nav{
 
 
     width: 100%;
-    margin-top: 0.5rem;
+    margin-top: 0rem;
     border:0;
 }
 
@@ -63,7 +66,10 @@ li {
 }
 
 
-.liens:hover {
+
+
+
+.barrehaute:hover {
 
     border-top: 3px solid#0065FC;
     color:#0065FC;
@@ -77,6 +83,7 @@ li {
     text-decoration: none;
     color:#0065FC;
     font-size:bold;
+    
  }
 
 
@@ -90,7 +97,29 @@ li {
 
  
 
+@media screen and (max-width:991px){
 
+
+    .desktop{
+
+       
+        margin-left: 0%;
+        margin-right:0%;
+        margin-top:0%;
+    }
+
+
+
+
+    li {
+        
+        margin-right: 6rem;
+        
+    }
+
+
+
+}
 
 
 
@@ -143,25 +172,25 @@ li {
     .headerpart1 span {
 
 
-        margin-top:1.6rem;
-
+        margin-top:1.1rem;
+        font-weight: bold;
 
     }
     
 
     .headerpart2 {
         display: flex;
-        justify-content:space-between;
+        justify-content:space-evenly;
+        padding: 0rem;
+        margin-top: 0rem;
         
-        margin-top: 1rem;
-        margin-left: 2rem;
-        margin-right: 3rem;
+        
     }
 
        
-    .headerpart2 span {
-
-        
+    .headerpart2 a {
+       
+       
        
        
     }
@@ -170,11 +199,16 @@ li {
 
         text-decoration: none;
         color:black;
-        border-bottom: 3px solid#F2F2F2;
+        
     
         
     }
     
+    .bottombar{
+        border-bottom: 3px solid#F2F2F2; 
+
+    }
+
     
     .liensmobil:hover {
     
@@ -183,6 +217,14 @@ li {
         cursor: pointer;
     
      }
+
+
+    
+
+
+     
+
+
 
     }
     
@@ -266,6 +308,7 @@ li {
    border-radius: 0 10px 10px 0;
    margin-left:0rem;
    font-size: 1rem;
+   font-weight: bold;
 
 
 
@@ -293,17 +336,48 @@ li {
 }
 
 
+/*Ajustement Mobil et Tablette*/
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:991px) {
+
+
+
+      .recherche{
+
+        
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 1.5rem;
+        margin-bottom:1.5rem;
+       text-align: left;
+        border: 1px solid black;
+        
+    
+    }
+
+
+
 
     .recherche h1{
 
         font-size:1.5rem;
-    
+       
     
      }
 
-.recherche button strong {
+
+#Barrerecherche0 {
+
+    
+    width: 100%;
+    border: 3px solid black;
+    
+
+
+
+}
+
+.recherche button span{
 
     display: none;
 
@@ -312,7 +386,7 @@ li {
 
 .recherche input {
 
-    width:11rem;
+    width:65%;
 
 
 
@@ -352,10 +426,20 @@ li {
     align-items:center;
     text-align:center;
     margin-bottom: 1.5rem;
+    
+    font-weight:bold;
+
+
 
  }
 
+.filtre span {
 
+
+    font-size:1.4rem;
+    font-weight: bold;
+
+}
 
 
 
@@ -524,25 +608,71 @@ li {
     
 }
 
-@media screen and (max-width:768px) {
+
+
+
+@media screen and (max-width:991px) {
 
     .filtre {
-
+        align-items: left;
+        text-align:center;
         flex-direction: row;
         justify-content:flex-start;
         flex-wrap: wrap;
-  
+        width:100%;
+        margin-left: 0px;
+        margin-right:0px;
+        margin-bottom: 1.5rem;
+        border: 1px solid black;
+ }
+
+
+    .filtre div {
+
+        
+        padding: 0rem;
+        border: 1px solid black;
+        
+    }
+
+
+
+
 
 
 }
 
 
+
+
+@media screen and (max-width:768px) {
+
+    .filtre {
+        align-items: left;
+        text-align:center;
+        flex-direction: row;
+        justify-content:flex-start;
+        flex-wrap: wrap;
+        width:100%;
+        margin-left: 0px;
+        margin-right:0px;
+        margin-bottom: 1.5rem;
+        border: 1px solid black;
+ }
+
+
     .filtre div {
 
-        margin:0.15rem;
         
+        padding: 0rem;
+        border: 1px solid black;
         
     }
+
+    
+
+
+  
 
 
 
@@ -556,6 +686,7 @@ li {
 
  #infos{
 
+    display: flex;
     margin-left: 10%;
     margin-right:10%;
     margin-bottom: 1rem;;
@@ -564,18 +695,35 @@ li {
  }
 
 
-#infos i {
 
-    display: inline;
-    width:100px;
-    height: 100px;
-    border-radius: 50px;
-    padding: 0.5rem;
-    border: 2px solid#F2F2F2;
-    color:#0065FC;
+#iconinfos {
+
+  
     
 
 }
+
+
+#infos i{
+
+    
+    position: relative;
+    top: -0.4rem;
+    
+    text-align: center;
+    color:#0065FC;
+    align-items: center;
+    text-align: center;
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid#F2F2F2;
+    
+    
+    margin-right: 0.5rem;
+}
+
+
 
 #infos p{
 
@@ -586,6 +734,25 @@ li {
 }
 
 
+/* Ajustement Mobil et Tablette */
+
+
+@media screen and (max-width:991px){
+
+    #infos{
+
+       
+        margin-left: 0px;
+        margin-right:0px;
+        
+    
+    
+     }
+    
+
+
+
+}
 
 
 
@@ -596,7 +763,8 @@ li {
  #hebergements {
     margin-left: 10%;
     margin-right:10%;
-
+    margin-bottom: 3.2rem;
+    
 
 
  }
@@ -606,9 +774,10 @@ li {
 
     width:65%;
     background-color:#F2F2F2;
-    padding: 1rem;
+    
     border-radius:20px;
     margin:0;
+    border: 2px solid black;
 
 
 
@@ -616,12 +785,19 @@ li {
 
 
 #encadre h1 {
-    margin-top:0.5rem;
-    margin-left: 1rem;
-    font-size: 1.5rem;
-
+   
 }
 
+#titrehebergementdispo{
+
+    margin-top:0.5rem;
+    margin-left: 0rem;
+    font-size: 1.2rem;
+    border: 2px solid black;
+
+
+
+}
 
 
 
@@ -633,7 +809,7 @@ li {
     flex-wrap: wrap;
     margin:0;
     padding:0;
-
+    border: 2px solid black;
 
 
 
@@ -646,7 +822,7 @@ li {
     border-radius: 20px;
     margin: 0.7rem;
     box-shadow: 0 0 16px rgb(194, 188, 188);
-
+    
 
 
  }
@@ -694,6 +870,7 @@ li {
 
     width:17rem;
     height:7rem;
+   
     border-radius:10px 10px 0 0;
     object-fit: cover;
 
@@ -726,6 +903,17 @@ li {
 
 }
 
+#afficherplus {
+
+      
+    margin-left: 2rem; 
+    font-size:1.1rem;
+    font-weight: bold;
+
+    }
+
+
+
 
 /* Les plus populaires */
 
@@ -735,7 +923,7 @@ li {
     display: flex;
     text-align: center;
     align-items: center;
-    
+    border: 1px solid black;
 
 }
 
@@ -745,6 +933,7 @@ li {
     font-size: 1.4rem;
     margin-left: 8.5rem;
     margin-top: 1.5rem;
+   
 }
 
 
@@ -757,6 +946,7 @@ li {
     border-radius:20px;
     margin-left:4rem;
     margin-top: 0;
+    border: 2px solid black;
     
 
 }
@@ -765,7 +955,8 @@ li {
 #encadre2 h1 {
 
     margin-bottom: 0.5rem;
-
+    margin-left: 1.5rem;
+    font-size:1.5rem;
 }
 
 
@@ -814,6 +1005,52 @@ li {
 }
 
 
+
+
+@media screen and (max-width:991px) {
+
+    #hebergements {
+
+        display:flex;
+        flex-direction:column-reverse;
+        margin-left: 0%;
+        margin-right:0%;
+        
+    
+    
+    
+    }
+
+
+    #encadre2{
+
+        width:100%;
+        background-color:#F2F2F2;
+        padding: 0rem;
+        border-radius:0px;
+        margin-left:0rem;
+       
+        margin-top: 0;
+      }
+    
+      #encadre{
+    
+        width:100%;
+        background-color:white;
+        
+        border-radius:20px;
+        margin:0;
+        align-items: left;
+    
+    }
+
+
+
+
+
+
+}
+
 @media screen and (max-width:768px) {
 
 
@@ -829,7 +1066,16 @@ li {
 
 }
 
+#titrehebergementdispo{
 
+    margin-top:0.5rem;
+    
+    font-size: 1.2rem;
+    border: 2px solid black;
+
+
+
+}
 
 
 
@@ -849,12 +1095,14 @@ li {
 
     width:100%;
     background-color:white;
-    padding: 1rem;
+    
     border-radius:20px;
     margin:0;
     align-items: left;
 
 }
+
+
 
 .espaceoff{
 
@@ -863,6 +1111,15 @@ li {
 
 }
 
+
+#populairetitre h1 {
+
+    align-items:left;
+    text-align: left;
+    margin-left: 0rem;
+    padding-left:0rem;
+    border: 2px solid black;
+}
 
 
 #populairetitre i{
@@ -873,10 +1130,50 @@ li {
     margin-top: 1.5rem;
 }
 
+ #encadre article {
+
+    background-color:white;
+    text-decoration: none;
+    border-radius: 20px;
+    
+    box-shadow: 0 0 16px rgb(194, 188, 188);
+    width: 100%;
 
 
 
+ }
 
+ .ResultatHebergement img{
+
+    width:17rem;
+    height:7rem;
+   width:100%;
+    border-radius:10px 10px 0 0;
+    object-fit: cover;
+
+
+}
+
+#encadre2 article {
+
+    margin:1.5rem;
+    padding: 0;
+    box-shadow: 0 0 16px rgb(194, 188, 188);
+   
+
+}
+
+#encadre2 article img {
+
+    width:8rem;
+    height:8rem;
+    border-radius:10px 0 0 10px;;
+    object-fit: cover;
+    padding:0;
+    margin:0.5rem;
+    
+
+}
 
 }
 
@@ -906,8 +1203,10 @@ h2 {
     display: grid;
     grid-template-columns: 8;
     grid-template-rows: 7;
-    border:3px solid black;
+   
     justify-content: space-between;
+    border: 1px solid black;
+
 
 
 
@@ -919,7 +1218,7 @@ h2 {
 #activités p {
 
     font-weight: bold;
-
+    
     margin-left: 1rem;;
 
 
@@ -962,7 +1261,7 @@ h2 {
     width: 20rem;
     height:27rem;
     border-radius:10px 10px 0 0;
-    object-fit: cover;
+    object-fit:cover;
 
 
 }
@@ -978,7 +1277,7 @@ h2 {
     grid-row: 1/5;
     background-color:white;
     box-shadow: 0 0 16px rgb(211, 209, 209);
-    margin:0 0.5rem 0rem 0.5rem;
+    
     border-radius:10px;
     width: 20rem;
     height:15.5rem;
@@ -1002,7 +1301,7 @@ h2 {
     grid-row: 4/8;
     background-color:white;
     box-shadow: 0 0 30px rgb(211, 209, 209);
-    margin: 3.7rem 0.5rem 0 0.5rem;
+    margin-top: 3.7rem;
     border-radius:10px;
     width: 20rem;
     height:11.5rem;
@@ -1040,13 +1339,13 @@ h2 {
     height:27rem;
     border-radius:10px 10px 0 0;
     object-fit: cover;
-
+   
  }
 
 
  #photo5 {
 
-    grid-column: 7/9;
+    grid-column: 7/8;
     grid-row: 1/4;
 
     border-radius:10px;
@@ -1055,7 +1354,8 @@ h2 {
     margin:0 0 1.5rem 0rem;
     width: 20rem;
     height:13rem;
-    border:3px solid purple;
+   
+    
 
 
 
@@ -1067,14 +1367,14 @@ h2 {
     height:10rem;
     border-radius:10px 10px 0 0;
     object-fit: cover;
-
+    
 
  }
 
 
  #photo6   {
 
-    grid-column: 7/9;
+    grid-column: 7/8;
     grid-row: 4/8;
 
     border-radius:10px;
@@ -1101,24 +1401,27 @@ h2 {
  }
 
 
- @media screen and (max-width:768px) {
 
+ @media screen and (max-width:991px) {
 
     #activités{ 
 
         display: flex;
         flex-direction: column;
-        margin-left: 00%;
-        margin-right:00%;
-        width:100%;
+        margin-left: 0px;
+        margin-right:0px;
+        width: 100%;
+        border: 1px solid black;
 
     }
 
     #activités div {
 
-        width: 20rem;
+        width: 100%;
         height: 13rem;
-        margin: 1rem;
+        margin-top:2rem;
+        margin-bottom: 0rem;
+       
 
 
     }
@@ -1126,12 +1429,66 @@ h2 {
 
     #activités img {
 
-        width: 20rem;
+        width: 100%;
         height: 10rem;
 
 
     }
 
+
+ }
+
+
+
+
+
+ @media screen and (max-width:768px) {
+
+
+
+    h2 {
+
+        margin-left: 0%;
+        margin-right:0%;
+    
+    
+    
+    }
+
+    #activités{ 
+
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-right:0px;
+        width:100%;
+        border: 1px solid black;
+
+    }
+
+    #activités div {
+
+        width: 100%;
+        height: 13rem;
+        margin-top:2rem;
+        margin-bottom: 0rem;
+       
+
+
+    }
+
+
+    #activités img {
+
+        width: 100%;
+        height: 10rem;
+
+
+    }
+
+
+
+   
 
 
  }
