@@ -4,7 +4,7 @@ body {
     
     margin-top:0%;
     border:0;
-    border: 1px solid black;
+    
     display: inline-block;
    
 
@@ -22,7 +22,7 @@ body {
     margin-left: 10%;
     margin-right:10%;
     margin-top:0%;
-    border: 1px solid black;
+    
 }
 
 .logo{
@@ -78,11 +78,11 @@ li {
  }
 
 
- #inscription {
+ .inscription {
 
     text-decoration: none;
     color:#0065FC;
-    font-size:bold;
+    font-weight:bold;
     
  }
 
@@ -121,7 +121,15 @@ li {
 
 }
 
+/* @media screen and (max-width:500px) and (min-width:768px) {
 
+
+    
+
+
+
+
+} */
 
  @media screen and (max-width:768px) {
 
@@ -179,11 +187,16 @@ li {
     
 
     .headerpart2 {
-        display: flex;
-        justify-content:space-evenly;
+
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1;
+        grid-gap: 0px;
+        text-align: center;
+        
         padding: 0rem;
         margin-top: 0rem;
-        
+        border-bottom: 3px solid#F2F2F2; 
         
     }
 
@@ -204,13 +217,25 @@ li {
         
     }
     
-    .bottombar{
+    #bottombar1{
+
+        grid-column:1;
+        grid-row: 1;
         border-bottom: 3px solid#F2F2F2; 
 
     }
 
-    
-    .liensmobil:hover {
+    #bottombar2{
+
+        grid-column:2;
+        grid-row: 1;
+        border-bottom: 3px solid#F2F2F2; 
+       
+    }
+
+
+
+    #bottombar1:hover {
     
         border-bottom: 3px solid#0065FC;
         color:#0065FC;
@@ -218,6 +243,14 @@ li {
     
      }
 
+     #bottombar2:hover {
+        
+        display:inline-block;
+        border-bottom: 3px solid#0065FC;
+        color:#0065FC;
+        cursor: pointer;
+    
+     }
 
     
 
@@ -277,7 +310,6 @@ li {
  #BarreRecherche {
 
     padding: 0.9rem;
-    align-items: right;
     border-left:0px;
     border-top: 2px #F2F2F2;
     border-bottom: 2px #F2F2F2;
@@ -299,7 +331,6 @@ li {
 
    background-color:#0065FC;
    color: white;
-   align-items: left;
    left: 0;
    cursor: pointer;
    padding: 0.88rem;
@@ -350,7 +381,7 @@ li {
         margin-top: 1.5rem;
         margin-bottom:1.5rem;
        text-align: left;
-        border: 1px solid black;
+       
         
     
     }
@@ -370,7 +401,7 @@ li {
 
     
     width: 100%;
-    border: 3px solid black;
+    
     
 
 
@@ -417,9 +448,12 @@ li {
 
  .filtre {
 
+    
     display: flex;
-    justify-content: flex-start;
+    justify-content:flex-start;
+    flex-wrap: wrap;
     width:80%;
+    padding: 0rem;
 
     margin-left: 10%;
     margin-right:10%;
@@ -433,71 +467,96 @@ li {
 
  }
 
-.filtre span {
-
-
+#titrefiltre {
+    
     font-size:1.4rem;
     font-weight: bold;
 
 }
 
 
+.btn1 {
+
+    display:flex;
+    text-align:center;
+    align-items:center;
+    margin-left: 2rem;
+
+}
+
+
+.iconefiltre {
+
+    display: flex;
+  align-items: center;
+  
+
+}
+
 
  .btn1 i {
 
 
-    display: inline;
+    
     position: relative;
-    width:48px;
-    height: 48px;
+    width:1rem;
+    height: 1rem;
     padding:1rem;
-    border-radius: 29px;
+    border-radius:50%; 
     background: #DEEBFF;
     color: #0065FC;
     z-index: 3;
-    left: 20%;
-
+    
  }
+ 
 
 
 
- .btn1 button {
-
+ .btn1 span {
 
     background-color: white;
     cursor: pointer;
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
-    padding-left: 4rem;
+    padding-left: 3rem;
     padding-right:1rem;
     border: 2px solid #F2F2F2;
     border-radius: 40px;
     font-weight: bold;
     font-size: 1rem;
+    margin:-2rem;
 
 }
 
 
+.btn2 {
 
+    display:flex;
+    text-align:center;
+    align-items:center;
+    margin-left: 4rem;
+
+}
 
 .btn2 i {
 
 
-    display: inline;
-    position: relative;
    
+    position: relative;
+    width:1rem;
+    height: 1rem;
     padding:1rem;
-    border-radius: 29px;
+    border-radius: 50%;
     background: #DEEBFF;
     color: #0065FC;
     z-index: 3;
-    left: 21%;
+    
 
  }
 
 
 
- .btn2 button {
+ .btn2 span {
 
 
     background-color: white;
@@ -510,27 +569,39 @@ li {
     border-radius: 40px;
     font-weight: bold;
     font-size: 1rem;
+    margin-left: -2rem;
+}
+
+.btn3 {
+
+    display:flex;
+    text-align:center;
+    align-items:center;
+    margin-left: 2rem;
+    
 
 }
+
 
 .btn3 i {
 
 
-    display: inline;
-    position: relative;
     
+    position: relative;
+    width:1rem;
+    height: 1rem;
     padding:1rem;
-    border-radius: 29px;
+    border-radius: 50%;
     background: #DEEBFF;
     color: #0065FC;
     z-index: 3;
-    left: 20%;
+   
 
  }
 
 
 
- .btn3 button {
+ .btn3 span {
 
 
     background-color: white;
@@ -543,6 +614,17 @@ li {
     border-radius: 40px;
     font-weight: bold;
     font-size: 1rem;
+    margin-left: -2rem;
+
+}
+
+
+.btn4 {
+
+    display:flex;
+    text-align:center;
+    align-items:center;
+    margin-left: 2rem;
 
 }
 
@@ -552,20 +634,20 @@ li {
 
     display: inline;
     position: relative;
-    width:48px;
-    height: 48px;
+    width:1rem;
+    height: 1rem;
     padding:1rem;
-    border-radius: 29px;
+    border-radius: 50%;
     background: #DEEBFF;
     color: #0065FC;
     z-index: 3;
-    left: 18%;
+    
 
  }
 
 
 
- .btn4 button {
+ .btn4 span{
 
 
     background-color: white;
@@ -578,10 +660,11 @@ li {
     border-radius: 40px;
     font-weight: bold;
     font-size: 1rem;
-
+    margin-left: -2rem;
+    
 }
 
-.filtre button:hover {
+.filtre span:hover {
 
 
     
@@ -593,19 +676,13 @@ li {
 ;
 }
 
-.filtre button:focus {
-
-    outline:none;
 
 
 
-}
-
-
-.filtre a {
+.btn1 a, .btn2 a, .btn3 a, .btn4 a {
 
     text-decoration:none;
-    
+    color: black;
 }
 
 
@@ -614,8 +691,8 @@ li {
 @media screen and (max-width:991px) {
 
     .filtre {
-        align-items: left;
-        text-align:center;
+        
+        text-align:left;
         flex-direction: row;
         justify-content:flex-start;
         flex-wrap: wrap;
@@ -623,20 +700,21 @@ li {
         margin-left: 0px;
         margin-right:0px;
         margin-bottom: 1.5rem;
-        border: 1px solid black;
+        
  }
+
+
+
+
 
 
     .filtre div {
 
         
         padding: 0rem;
-        border: 1px solid black;
+        
         
     }
-
-
-
 
 
 
@@ -648,28 +726,38 @@ li {
 @media screen and (max-width:768px) {
 
     .filtre {
-        align-items: left;
-        text-align:center;
-        flex-direction: row;
-        justify-content:flex-start;
-        flex-wrap: wrap;
-        width:100%;
-        margin-left: 0px;
-        margin-right:0px;
-        margin-bottom: 1.5rem;
-        border: 1px solid black;
- }
+       display:block; 
 
+
+
+    }
+
+
+ .btn1,.btn2, .btn3, .btn4 {
+
+      margin-left: 0rem;          
+      margin-top: 1rem;  
+
+
+ }
 
     .filtre div {
 
         
         padding: 0rem;
-        border: 1px solid black;
         
     }
 
     
+#titrefiltre {
+
+    
+    margin:0;
+    padding: 0rem;
+    font-size:1.4rem;
+    font-weight: bold;
+
+}
 
 
   
@@ -690,7 +778,7 @@ li {
     margin-left: 10%;
     margin-right:10%;
     margin-bottom: 1rem;;
-
+    
 
  }
 
@@ -698,6 +786,7 @@ li {
 
 #iconinfos {
 
+    align-items:center;
   
     
 
@@ -708,12 +797,11 @@ li {
 
     
     position: relative;
-    top: -0.4rem;
+    
     
     text-align: center;
     color:#0065FC;
-    align-items: center;
-    text-align: center;
+    
     width:30px;
     height: 30px;
     border-radius: 50%;
@@ -777,7 +865,7 @@ li {
     
     border-radius:20px;
     margin:0;
-    border: 2px solid black;
+    
 
 
 
@@ -793,7 +881,7 @@ li {
     margin-top:0.5rem;
     margin-left: 0rem;
     font-size: 1.2rem;
-    border: 2px solid black;
+    
 
 
 
@@ -809,14 +897,14 @@ li {
     flex-wrap: wrap;
     margin:0;
     padding:0;
-    border: 2px solid black;
+    
 
 
 
 
  }
 
-   article {
+  .hebergements3 {
     background-color:white;
     text-decoration: none;
     border-radius: 20px;
@@ -827,7 +915,7 @@ li {
 
  }
 
- article:hover{
+.hebergements3:hover{
 
     transform: scale(1.02,1.02);
 
@@ -837,7 +925,7 @@ li {
 
 
 
- article a {
+.hebergements3 a {
 
     text-decoration: none;
     color: black;
@@ -923,7 +1011,7 @@ li {
     display: flex;
     text-align: center;
     align-items: center;
-    border: 1px solid black;
+    
 
 }
 
@@ -946,7 +1034,7 @@ li {
     border-radius:20px;
     margin-left:4rem;
     margin-top: 0;
-    border: 2px solid black;
+    
     
 
 }
@@ -960,7 +1048,7 @@ li {
 }
 
 
-#encadre2 article img {
+#encadre2 .hebergements3 img {
 
     width:8rem;
     height:8rem;
@@ -971,7 +1059,7 @@ li {
 
 }
 
-#encadre2 article {
+#encadre2 .hebergements3 {
 
     margin:1.5rem;
     padding: 0;
@@ -1040,11 +1128,17 @@ li {
         
         border-radius:20px;
         margin:0;
-        align-items: left;
+        
     
     }
 
+    #populairetitre i{
 
+
+        font-size: 1.4rem;
+        margin-left: 37rem;
+        margin-top: 1.5rem;
+    }
 
 
 
@@ -1071,7 +1165,7 @@ li {
     margin-top:0.5rem;
     
     font-size: 1.2rem;
-    border: 2px solid black;
+    
 
 
 
@@ -1114,11 +1208,11 @@ li {
 
 #populairetitre h1 {
 
-    align-items:left;
+    
     text-align: left;
     margin-left: 0rem;
     padding-left:0rem;
-    border: 2px solid black;
+  
 }
 
 
@@ -1126,11 +1220,11 @@ li {
 
 
     font-size: 1.4rem;
-    margin-left: 2.5rem;
+    margin-left: 5rem;
     margin-top: 1.5rem;
 }
 
- #encadre article {
+ #encadre .hebergements3 {
 
     background-color:white;
     text-decoration: none;
@@ -1154,7 +1248,7 @@ li {
 
 }
 
-#encadre2 article {
+#encadre2 .hebergements3 {
 
     margin:1.5rem;
     padding: 0;
@@ -1163,7 +1257,7 @@ li {
 
 }
 
-#encadre2 article img {
+#encadre2 .hebergements3 img {
 
     width:8rem;
     height:8rem;
@@ -1202,12 +1296,12 @@ h2 {
     border-radius:20px;
     display: grid;
     grid-template-columns: 8;
-    grid-template-rows: 7;
+    grid-template-rows: 6;
    
     justify-content: space-between;
-    border: 1px solid black;
-
-
+    
+    
+    
 
 
 
@@ -1251,17 +1345,21 @@ h2 {
    margin-right:0rem;
    margin-bottom: 0rem;
    padding-bottom: 0rem;
-   width: 20rem;
+   width: 90%;
    height:30rem;
+   
+   
+   
 }
 
 
 #photo1 img {
 
-    width: 20rem;
+    width: 100%;
     height:27rem;
     border-radius:10px 10px 0 0;
     object-fit:cover;
+    
 
 
 }
@@ -1279,7 +1377,7 @@ h2 {
     box-shadow: 0 0 16px rgb(211, 209, 209);
     
     border-radius:10px;
-    width: 20rem;
+    width: 90%;
     height:15.5rem;
 
  }
@@ -1287,7 +1385,7 @@ h2 {
 
  #photo2 img {
 
-    width: 20rem;
+    width: 100%;
     height:12.5rem;
     border-radius:10px 10px 0 0;
     object-fit: cover;
@@ -1303,7 +1401,7 @@ h2 {
     box-shadow: 0 0 30px rgb(211, 209, 209);
     margin-top: 3.7rem;
     border-radius:10px;
-    width: 20rem;
+    width: 90%;
     height:11.5rem;
  }
 
@@ -1311,7 +1409,7 @@ h2 {
 
  #photo3 img {
 
-    width: 20rem;
+    width: 100%;
     height:8.5rem;
     border-radius:10px 10px 0 0;
     object-fit: cover;
@@ -1327,7 +1425,7 @@ h2 {
     box-shadow: 0 0 16px rgb(194, 188, 188);
 
     margin:0 0rem 0 0rem;
-    width: 20rem;
+    width: 90%;
     height:30rem;
 
 
@@ -1335,7 +1433,7 @@ h2 {
 
  #photo4  img{
 
-    width: 20rem;
+    width: 100%;
     height:27rem;
     border-radius:10px 10px 0 0;
     object-fit: cover;
@@ -1345,14 +1443,14 @@ h2 {
 
  #photo5 {
 
-    grid-column: 7/8;
+    grid-column: 7/9;
     grid-row: 1/4;
 
     border-radius:10px;
     background-color:white;
     box-shadow: 0 0 16px rgb(194, 188, 188);
     margin:0 0 1.5rem 0rem;
-    width: 20rem;
+    width: 100%;
     height:13rem;
    
     
@@ -1363,7 +1461,7 @@ h2 {
 
  #photo5 img {
 
-    width: 20rem;
+    width: 100%;
     height:10rem;
     border-radius:10px 10px 0 0;
     object-fit: cover;
@@ -1374,14 +1472,14 @@ h2 {
 
  #photo6   {
 
-    grid-column: 7/8;
+    grid-column: 7/9;
     grid-row: 4/8;
 
     border-radius:10px;
     background-color:white;
     box-shadow: 0 0 16px rgb(194, 188, 188);
 
-    width: 20rem;
+    width: 100%;
     height:13.4rem;
     margin: 1.5rem 0rem 0 0rem;
 
@@ -1392,13 +1490,97 @@ h2 {
 
 
 
-    width: 20rem;
+    width: 100%;
     height:10.4rem;
     border-radius:10px 10px 0 0;
     object-fit: cover;
 
 
  }
+
+
+@media screen and (max-width:1620px) and (min-width:1430px){
+
+
+    /* #photo 1 {
+
+        width: 15rem;
+        height: 25rem;
+
+    }
+ 
+    #photo1 img {
+
+        width: 15rem;
+        height: 25rem;
+       
+    
+     } */
+     html {
+
+        font-size: 14px;
+
+     }
+
+     .desktop li {
+
+
+        margin-right: 2rem;
+
+
+     }
+
+    /* .espaceoff2 {
+
+        display:none;
+
+
+    } */
+
+}
+
+@media screen and (max-width:1430px) and (min-width:991px) {
+
+
+    html {
+
+        font-size: 12px;
+
+     }
+
+     .desktop li {
+
+
+        margin-right: 2rem;
+
+
+     }
+
+}
+
+
+@media screen and (max-width:1210px) and (min-width:991px) {
+
+
+    html {
+
+        font-size: 10px;
+
+     }
+
+     .desktop li {
+
+
+        margin-right: 2rem;
+
+
+     }
+
+}
+
+
+
+
 
 
 
@@ -1411,7 +1593,7 @@ h2 {
         margin-left: 0px;
         margin-right:0px;
         width: 100%;
-        border: 1px solid black;
+        
 
     }
 
@@ -1462,7 +1644,7 @@ h2 {
         margin-left: 0px;
         margin-right:0px;
         width:100%;
-        border: 1px solid black;
+       
 
     }
 
