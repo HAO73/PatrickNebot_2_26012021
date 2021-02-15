@@ -66,13 +66,17 @@ li {
 }
 
 
+.liens:hover{
+    color:#0065FC;
 
+
+}
 
 
 .barrehaute:hover {
 
     border-top: 3px solid#0065FC;
-    color:#0065FC;
+    
     cursor: pointer;
 
  }
@@ -217,6 +221,17 @@ li {
     
         
     }
+
+
+    .liensmobil:hover{
+
+        color:#0065FC;
+        
+    
+        
+    }
+
+
     
     #bottombar1{
 
@@ -449,6 +464,21 @@ li {
 
 
 }
+
+@media screen and (max-width:360px){
+
+    .recherche input {
+
+        width:60%;
+    
+    
+    
+    }
+
+
+}
+
+
 
 
  /* Filtre */
@@ -814,16 +844,23 @@ li {
 
 
 
-    
+}
 
+@media screen and (max-width:360px) {
 
+    .filtre {
+        display:block;
+       
+       
   
+  
+  
+      }
+
 
 
 
 }
-
-
 
 
 /* infos */
@@ -844,7 +881,13 @@ li {
 #iconinfos {
 
     align-items:center;
-  
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid#F2F2F2;  
+    text-align: center;
+    line-height: 30px;
+
     
 
 }
@@ -852,28 +895,16 @@ li {
 
 #infos i{
 
-    
-    position: relative;
-    
-    
-    text-align: center;
     color:#0065FC;
-    
-    width:30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 2px solid#F2F2F2;
-    
-    
-    margin-right: 0.5rem;
-}
+        
+  }
 
 
 
-#infos p{
+#infos span{
 
-  margin: 3rem;
-
+margin-top: 0.5rem;
+margin-left: 1rem;
 
 
 }
@@ -921,7 +952,7 @@ li {
     background-color:#F2F2F2;
     
     border-radius:20px;
-    margin:0;
+    margin:0rem;
     
 
 
@@ -929,7 +960,10 @@ li {
 }
 
 
-#encadre h1 {
+#encadre h2 { 
+
+    margin-left: 1rem;
+    font-size:1.4rem;
    
 }
 
@@ -954,6 +988,7 @@ li {
     flex-wrap: wrap;
     margin:0;
     padding:0;
+    margin-bottom:2rem;
     
 
 
@@ -1037,7 +1072,12 @@ li {
 
 }
 
+.price {
 
+    font-weight: bold;
+
+
+}
 
 
 .star .fas{
@@ -1054,9 +1094,9 @@ li {
     margin-left: 2rem; 
     font-size:1.1rem;
     font-weight: bold;
+   
 
     }
-
 
 
 
@@ -1076,7 +1116,7 @@ li {
 #populairetitre i{
 
     font-size: 1.4rem;
-    margin-left: 8.5rem;
+    margin-left: 7.5rem;
     margin-top: 1.5rem;
    
 }
@@ -1097,11 +1137,11 @@ li {
 }
 
 
-#encadre2 h1 {
+#encadre2 h2 {
 
     margin-bottom: 0.5rem;
     margin-left: 1.5rem;
-    font-size:1.5rem;
+    font-size:1.4rem;
 }
 
 
@@ -1134,9 +1174,6 @@ li {
 
 
 
-
-
-
 .ResultatHebergementPop :nth-child(1) {
 
     font-weight: bold;
@@ -1146,9 +1183,51 @@ li {
 .ResultatHebergementPop :nth-child(2) {
 
     margin-top:0.5rem;
+   
 
 }
 
+.star2 .fas,.star3 .fas,.star4 .fas{
+
+    color: #0065FC;
+ 
+ 
+ 
+ }
+
+.star2{
+
+padding-top:3rem;
+ 
+}
+
+.star3{
+
+    padding-top:2rem;
+     
+    }
+    
+.star4{
+
+        padding-top:3rem;
+         
+        }
+        
+
+@media screen and (max-width:1440px) {
+
+
+    
+#populairetitre i{
+
+    font-size: 1.4rem;
+    margin-left: 3.5rem;
+    margin-top: 1.5rem;
+   
+}
+
+
+}
 
 
 
@@ -1264,12 +1343,7 @@ li {
     }
 
 
-.espaceoff{
 
-    display:none;
-
-
-}
 
 
 #populairetitre h1 {
@@ -1375,13 +1449,12 @@ h2 {
 
 }
 
-#activités p {
+#activités span {
 
     font-weight: bold;
     
-    margin-left: 1rem;;
-
-
+    margin-left: 1rem;
+    
 }
 
 #activités a {
@@ -1425,7 +1498,7 @@ h2 {
     height:27rem;
     border-radius:10px 10px 0 0;
     object-fit:cover;
-    
+    margin-bottom: 0.5rem;
 
 
 }
@@ -1455,7 +1528,7 @@ h2 {
     height:12.5rem;
     border-radius:10px 10px 0 0;
     object-fit: cover;
-
+    margin-bottom: 0.5rem;
  }
 
 
@@ -1479,7 +1552,7 @@ h2 {
     height:8.5rem;
     border-radius:10px 10px 0 0;
     object-fit: cover;
-
+    margin-bottom: 0.5rem;
  }
 
  #photo4  {
@@ -1503,7 +1576,7 @@ h2 {
     height:27rem;
     border-radius:10px 10px 0 0;
     object-fit: cover;
-   
+    margin-bottom: 0.5rem;
  }
 
 
@@ -1531,7 +1604,7 @@ h2 {
     height:10rem;
     border-radius:10px 10px 0 0;
     object-fit: cover;
-    
+    margin-bottom: 0.5rem;
 
  }
 
@@ -1560,7 +1633,7 @@ h2 {
     height:10.4rem;
     border-radius:10px 10px 0 0;
     object-fit: cover;
-
+    margin-bottom: 0.5rem;
 
  }
 
@@ -1596,13 +1669,7 @@ h2 {
 
      }
 
-    /* .espaceoff2 {
-
-        display:none;
-
-
-    } */
-
+    
 }
 
 @media screen and (max-width:1430px) and (min-width:991px) {
