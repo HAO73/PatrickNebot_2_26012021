@@ -206,13 +206,7 @@ li {
     }
 
        
-    .headerpart2 a {
-       
-       
-       
-       
-    }
-
+  
     .liensmobil{
 
         text-decoration: none;
@@ -231,7 +225,7 @@ li {
         
     }
 
-
+   
     
     #bottombar1{
 
@@ -1844,6 +1838,13 @@ footer{
 
 }
 
+
+.grasPiedDePage{
+
+    font-weight: bold;
+
+
+}
 
 #pieddepage a{
 
