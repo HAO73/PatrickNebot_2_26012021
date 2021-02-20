@@ -269,13 +269,7 @@ li {
 
 
      }
-    
-
-
-     
-
-
-
+  
     }
     
     
@@ -303,14 +297,20 @@ li {
  }
 
 
+#place {
 
+    
+    margin-top:0.5rem;
+
+
+}
 
 
 
 .recherche span{
 
    display:block;
-   margin-top: 0.5rem;
+   margin-top: 0rem;
    margin-bottom:0rem;
 
 }
@@ -327,6 +327,7 @@ li {
 
 
 }
+
 
 
  #BarreRecherche {
@@ -347,10 +348,21 @@ li {
 
 }
 
+#Barrerecherche0 {
+
+    
+   display:flex;
+    
+    
+
+
+
+}
 
 
 .recherche button{
 
+   display: inline; 
    background-color:#0065FC;
    color: white;
    left: 0;
@@ -362,10 +374,16 @@ li {
    margin-left:0rem;
    font-size: 1rem;
    font-weight: bold;
-
+   
+   
 
 
 }
+
+
+
+
+
 
 .recherche button i{
 
@@ -427,6 +445,13 @@ li {
     
 
 
+
+}
+
+
+.recherche button{
+
+    padding:0.88rem;
 
 }
 
