@@ -139,13 +139,7 @@ li {
 
 
 
-    body{
-
-        max-width: auto;
-        
-    }
-
-    #desktop {
+     #desktop {
     
        display: none;
     
@@ -904,13 +898,14 @@ li {
 
 #iconinfos {
 
-    align-items:center;
-    width:30px;
-    height: 30px;
+    position: relative;
+    width:20px;
+    height: 20px;
     border-radius: 50%;
     border: 2px solid#F2F2F2;  
     text-align: center;
-    line-height: 30px;
+    top:0.2rem;
+    
 
     
 
@@ -920,6 +915,7 @@ li {
 #infos i{
 
     color:#0065FC;
+    font-size:0.8rem;
         
   }
 
@@ -953,6 +949,7 @@ margin-left: 1rem;
 
 
 }
+
 
 
 
@@ -1352,7 +1349,7 @@ padding-top:3rem;
     
     border-radius:20px;
     margin:0;
-    align-items: left;
+   
 
 }
 
